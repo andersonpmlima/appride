@@ -58,7 +58,7 @@ L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{
 
 const positionsArray = ride.data.map((position=>{
 
-    return [position.latitude, poisition.longitude]
+    return [position.latitude, position.longitude]
 }))
 
 const polyline = L.polyline(positionsArray, {color: "#F00"}).addTo(map)
